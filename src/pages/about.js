@@ -1,11 +1,17 @@
 export default function renderAboutPage() {
   const container = document.getElementById("content");
-  const heading = document.createElement("h1");
-  const subHeading = document.createElement("h2");
+  const content = document.createElement("div");
+  const heading = document.createElement("h2");
+  const subHeading = document.createElement("h3");
+  const paragraph = document.createElement("p");
 
-  heading.textContent = "ABOUT";
-  subHeading.textContent = "ABOUT";
+  heading.textContent = "Lorem ipsum";
+  subHeading.textContent = "Lorem ipsum";
+  paragraph.textContent = "Lorem ipsum";
 
-  container.appendChild(heading);
-  container.appendChild(subHeading);
+  content.appendChild(heading);
+  content.appendChild(subHeading);
+  content.appendChild(paragraph);
+
+  container.appendChild(content);
 }

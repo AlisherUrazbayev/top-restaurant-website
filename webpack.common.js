@@ -6,11 +6,20 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.scss$/i,
+        use: [
+          "style-loader", // Injects styles into DOM
+          "css-loader", // Turns CSS into CommonJS
+          "sass-loader", // Compiles Sass to CSS
+        ],
+      },
+      {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: "asset/resource",
-        generator: {
-          filename: "images/[hash][ext][query]", // Place all images in the 'images' folder in the output directory
-        },
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/i,
+        type: "asset/resource",
       },
     ],
   },

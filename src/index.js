@@ -2,6 +2,7 @@ import renderHomePage from "./pages/home";
 import renderMenuPage from "./pages/menu";
 import renderAboutPage from "./pages/about";
 import clearScreen from "./utils/clearScreen";
+import "./styles/global.scss";
 
 const btnHome = document.getElementById("btn-home");
 const btnMenu = document.getElementById("btn-menu");
